@@ -1,0 +1,272 @@
+
+body {
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    padding-top: 100px;
+    background-color: #faedd6;
+}
+.gradation{
+	background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+	background-clip:text;
+	-webkit-text-fill-color: transparent;
+}
+h1{font-size: 250%;}
+/******* ヘッダーのスタイル ********/
+nav { position: fixed;
+  top: 0; 
+  width: 100%;
+   background: #faedd6;
+   width: 100%;
+  z-index: 1000;
+}
+/* ヘッダーを固定させる */
+nav.fixed {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 300px; 
+    height: auto;
+}
+
+nav ul {
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+}
+.item {
+    margin: 0 2em;
+    padding: 17px 0;
+    font-weight:bold;
+}
+.item a {
+    color: #4e1d07;
+    text-decoration: none;
+    font-size: 200%;
+}
+.item a:hover {
+    color: #ff7f50;
+}
+section{
+    background-color: #F0FFF0;
+    padding: 2em;
+}
+section .wrapper{
+    max-width: 800px;
+}
+
+/******* ここからフッターのスタイル ********/
+footer {
+    background-color: #faedd6;
+    padding:3em;
+}
+
+footer p {
+    font-size: 20px;
+    color: #dbd0bc;
+    max-width: 800px;
+    padding: 0;
+    text-align:center;
+    margin:0 auto;
+    font-weight:bold;
+}
+
+
+/* スライド画像 */
+* {
+  box-sizing: border-box;
+}
+.mySlides img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px; 
+}
+.slideshow-container {
+  border-radius: 30px;
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+  margin-top: 80px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;  /* 縦中央 */
+  width: auto;
+  margin-top: -22px; /* 高さの半分で中央に合わせる */
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev {
+  left: 0; 
+  border-radius: 3px 0 0 3px;  
+}
+.next {
+  right: 0; 
+  border-radius: 3px 0 0 3px; 
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* ABOUTのカード */
+.card-link-rounded {
+ border-radius: 12px;
+ display: block; 
+ background-color: #e7d8c0;
+ margin: 0 auto;
+}
+.card-inner {
+ padding: 20px;
+}
+/* NEWS */
+.row {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+   max-width: 900px;
+   margin: 0 auto;
+}
+.column {
+  flex: 1 1 33.3%;
+  padding: 0 15px;
+  margin-bottom: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #ffffff;
+}
+.container {
+  padding: 0 16px;
+  flex-grow: 1;
+}
+
+/* しぇふ */
+.jigazou {
+  border-radius: 50%;
+  width: 30%;
+  height: auto;
+}
+/* インフォメーション */
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.card-img img {
+    width: 300px;
+    height: auto;
+}
+.omisecard-text {
+  text-align: left;
+  flex: 1;
+}
+/* menu */
+.rowm {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+   max-width: 900px;
+   margin: 0 auto;
+}
+.columnm {
+  flex: 1 1 33.3%;
+  padding: 0 5px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.cardm {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #FEFBEC;
+}
+.menugazou{
+  border-radius: 25px;
+}
+/* トッピング */
+.columnt {
+  flex: 1 1 10%;
+  padding: 0 5px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+/* こんたくと */
+.burger-innner{
+border-radius: 12px;
+ display: block; 
+ background-color: #9e742f;
+ margin: 0 auto;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 0px solid #000000; /* Gray border */
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4e1d07;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #754f3d;
+}
